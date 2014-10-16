@@ -1,0 +1,122 @@
+/*Variables*/
+naranja_base = rgb(230, 126, 34)
+naranja_medio = rgb(211, 84, 0)
+naranja_fuerte = rgb(150, 40, 27)
+gris_base = rgb(236, 236, 236)
+
+/*Mixins*/
+transition()
+  -webkit-transtion arguments
+  -moz-transition arguments
+  -ms-transition arguments
+  -o-transition arguments
+  transition arguments
+
+transform()
+  -webkit-transform arguments
+  -moz-transform arguments
+  -ms-transform arguments
+  -o-transform arguments
+  transform arguments
+
+box-sizing()
+	-webkit-box-sizing arguments
+	-moz-box-sizing arguments
+	-ms-box-sizing arguments
+	-o-box-sizing arguments
+	box-sizing arguments
+
+/*Mis estilos*/
+body
+	margin-top 8em
+footer
+	background naranja_medio
+	box-sizing border-box
+	color white
+	margin-top 2em
+	padding 1em
+	width 100%
+
+#background
+	box-sizing border-box
+	padding 0
+	text-align center
+	width 100%
+
+	img
+		height auto
+		width 100%
+
+#logo
+	transition all .3s ease
+
+#logo
+	&:hover
+		transform scale(1.1)
+
+.navbar-default
+	background naranja_base
+	border 0
+	border-radius 0
+	margin-bottom 0
+	padding 1em
+
+.navbar-right
+	padding-top 1em
+
+.navbar-default .navbar-nav
+	> li 
+		> a
+			color white
+			font-size 1.5em
+			font-weight bold
+			margin-right 1em
+			transition all .3s ease
+
+			&:hover
+				color yellow
+
+.navbar-header
+	.navbar-toggle
+		background-color naranja_medio
+		border 1px solid yellow
+
+		&:hover
+		&:focus
+			background naranja_fuerte
+
+		.icon-bar
+			background-color white
+
+/*Anuncios*/
+.anuncio
+	margin-bottom 1em
+	padding-bottom 2em
+	padding-top 2em
+	width 100%
+
+.img-optimizada
+	width 300px
+	height auto
+
+.media-body
+	p
+		font-size 1.5em
+
+.parallax
+	background-attachment fixed
+	background-repeat no-repeat
+	background-size 100% auto
+	background-position 50% 50%
+	box-sizing border-box
+	height 420px
+	margin-top 8em
+	padding 1em
+	text-align left
+	width 100%
+
+	h1
+		color white
+
+.parallax-img
+	background-image url("../img/backGris.jpg")
