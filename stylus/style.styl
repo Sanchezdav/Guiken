@@ -29,6 +29,8 @@ box-sizing()
 /*Mis estilos*/
 body
 	margin-top 8em
+	position relative
+
 footer
 	background naranja_medio
 	box-sizing border-box
@@ -88,6 +90,14 @@ footer
 		.icon-bar
 			background-color white
 
+.media
+	.media-object
+		width 250px
+		height auto
+	.media-heading
+		font-weight bold
+		font-size 2em
+
 /*Anuncios*/
 .anuncio
 	margin-bottom 1em
@@ -107,16 +117,20 @@ footer
 	background-attachment fixed
 	background-repeat no-repeat
 	background-size 100% auto
-	background-position 50% 50%
+	background-position 50% 45%
+	border-bottom 3px solid orange
 	box-sizing border-box
-	height 420px
-	margin-top 8em
+	height 355px
+	margin-top 0
 	padding 1em
 	text-align left
 	width 100%
 
 	h1
 		color white
+		font-family 'Lobster', cursive
 
 .parallax-img
 	background-image url("../img/backGris.jpg")
+
+@import 'medias.styl'
